@@ -28,9 +28,10 @@ public class ParkingService {
     public void stopParkingSession(ParkingSessionStopCommand command) {
         LocalDateTime now = systemClock.getCurrentTime();
         // ParkingSession parkingSession = TODO retrieve the parkingSession with the given licensePlate and status STARTED from the database
-        // parkingSession.setEnd(now);
-        // parkingSession.setStatus(ParkingSessionStatus.ENDED);
-        // parkingSession.setPrice(); TODO use ParkingSessionPriceCalculator to calculate the price of the parkingSession
+        // TODO set the end time of the parkingSession
+        // TODO use ParkingSessionPriceCalculator to calculate the price of the parkingSession
+        // TODO use PaymentRequestService to send the payment request
+        // TODO set status PAYMENT_REQUESTED for the parkingSession
         // TODO save all changes to the database
     }
 }

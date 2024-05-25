@@ -16,11 +16,11 @@ public class Car {
     }
 
 
-    // TODO This class must be a Thread
-    // Each car: 1. takes a random parking (uuid)
-    //           2. starts a parking session using the apihelper
+    // TODO This class should be a Thread
+    // Each car: 1. takes a random parking (uuid) from possibleParkings
+    //           2. starts a parking session using the apiHelper
     //           3. sleeps for a random time between 1000 and 8000 milliseconds
     //           4. stops the parking session using the api helper
-    //           5. sleeps for a random time between 10000 and 60000 millisenconds
+    //           5. sleeps for a random time between 10000 and 60000 milliseconds
     //           repeat step 1 - 5 forever
 }
