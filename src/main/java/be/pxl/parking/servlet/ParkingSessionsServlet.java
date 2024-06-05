@@ -15,16 +15,6 @@ public class ParkingSessionsServlet {
 	private static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 	private static final DateTimeFormatter TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm");
 
-	private static Filter createFilter(HttpServletRequest request) {
-		String parking = request.getParameter("parking");
-		String licensePlate = request.getParameter("licensePlate");
-
-		ParkingSessionStatus status = null;
-		if (request.getParameter("status") != null) {
-			status = ParkingSessionStatus.valueOf(request.getParameter("status"));
-		}
-		return new Filter(status, licensePlate, parking);
-	}
 
 	private static PageRequest createPageble(HttpServletRequest request) {
 		int page = request.getParameter("page") == null? 0 : Integer.parseInt(request.getParameter("page"));

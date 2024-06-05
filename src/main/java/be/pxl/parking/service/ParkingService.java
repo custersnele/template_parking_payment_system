@@ -11,7 +11,6 @@ import java.time.LocalDateTime;
 public class ParkingService {
     private final SystemClock systemClock;
 
-
     public ParkingService(SystemClock systemClock) {
         this.systemClock = systemClock;
     }

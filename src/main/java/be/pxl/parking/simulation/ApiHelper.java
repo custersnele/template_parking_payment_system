@@ -15,9 +15,9 @@ public class ApiHelper {
                 .build();
     }
 
-    public Boolean startParkingSession(String licensePlate, String parking) {
+    public Boolean startParkingSession(String licensePlate, String parkingUuid) {
         String jsonBody = "{\"licensePlate\": \"" + licensePlate + "\", " +
-                "\"parking\" : \"" + parking + "\"}";
+                "\"parking\" : \"" + parkingUuid + "\"}";
         return createRequest("start", jsonBody);
     }
 
