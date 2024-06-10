@@ -19,7 +19,7 @@ findAllEntitiesBy
 ```
 List<Employee> findEmployeeByLastname(String lastname);
 List<Employee> findAllEmployeesByAge(int age);
-List<Employee> / Optional<Employee> findEmployeeByLastnameAndFirstname(String lastname, String firstname);
+List<Employee> or Optional<Employee> findEmployeeByLastnameAndFirstname(String lastname, String firstname);
 List<Employee> findAllEmployeesByAgeGreaterThanAndDepartment(int age, String department);
 List<Employee> findEmployeeByDepartment_Name(String departmentName);
 List<Employee> findAllEmployeesByManager_Lastname(String managerLastname);
